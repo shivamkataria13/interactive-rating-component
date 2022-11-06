@@ -1,0 +1,92 @@
+/* font-family: 'Overpass', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    margin: 10vh auto;
+    background-color: #252d37;
+    height: 45vh;
+    width: 38vh;
+    border-radius: 6%;
+    /* text-align: center; */
+}
+
+.star, .text1, .text2, .all-ratings, .btn{
+    margin: 2.5vh;
+}
+
+.star{
+    display: inline-block;
+    background-color: #333e4c;
+    height: 5.5vh;
+    width: 5.5vh;
+    border-radius: 50%;
+}
+
+.star img{
+    margin:1.5vh;
+}
+
+
+.text1, .text2, .ratings, .btn{
+    font-family: 'Overpass', sans-serif;
+    color: white;
+}
+
+.text1{
+    margin-top: 1vh;
+    font-weight: 700;
+}
+
+.text2{
+    font-weight: lighter;
+    font-size: .7rem;
+    line-height: 2.3vh;
+}
+
+.all-ratings{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.ratings{
+    display: flex;
+    background-color: #333e4c;
+    color: #959eac;
+    height: 5.5vh;
+    width: 5.5vh;
+    border: 0;
+    border-radius: 50%;
+    margin: auto;
+    align-items: center;
+    justify-content:center ;
+}
+
+
+.btn{
+    margin-top: 4vh;
+    height: 5vh;
+    background-color: #fb7413;
+    border-radius: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ratings:hover{
+    background-color: #fb7413;
+    color: white;
+}
+
+.btn:hover{
+    background-color: white;
+    color: #fb7413;
+}
+
+
