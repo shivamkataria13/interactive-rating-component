@@ -6,6 +6,10 @@
     font-family: 'Overpass', sans-serif;
 }
 
+body{
+    background-color: #313e4b;
+}
+
 .main{
     position: relative;
     margin: 10vh auto;
@@ -13,7 +17,6 @@
     height: 45vh;
     width: 38vh;
     border-radius: 6%;
-    /* text-align: center; */
 }
 
 .star, .text1, .text2, .all-ratings, .btn{
@@ -33,7 +36,7 @@
 }
 
 
-.text1, .text2, .ratings, .btn{
+.text1, .text2, .ratings, .btn, .rating-selected, .text-ty, .text-ty2, .rateagain{
     color: white;
 }
 
@@ -67,6 +70,7 @@
     margin: auto;
     align-items: center;
     justify-content:center ;
+    transition: .3s;
 }
 
 
@@ -78,17 +82,28 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: .3s;
+    letter-spacing: .1rem;
 }
 
 .ratings:hover{
     background-color: #fb7413;
     color: white;
+    cursor: pointer;
+}
+
+.ratings:focus{
+    background-color:#959eac;
+    color: white;
+    cursor: pointer;
 }
 
 .btn:hover{
     background-color: white;
     color: #fb7413;
+    cursor: pointer;
 }
+
 
 
 
@@ -98,6 +113,8 @@
 
 
 .main-ty{
+    display: flex;
+    flex-direction: column;
     position: absolute;
     top: 0;
     visibility: hidden;
@@ -111,7 +128,7 @@
 
 .ty{
     display: inline-block;
-    margin: 4vh;
+    margin: 3vh auto 0;
 }
 
 .rating-selected{
@@ -123,25 +140,43 @@
     height: 4vh;
     width: 23vh;
     border-radius: 5vh;
-    margin: auto;
-    margin-top: 0vh;
-    font-size: .85rem
+    margin: 0 auto 1vh;
+    font-size: .85rem;
 }
 
 .text-ty{
-    margin: 2vh;
+    margin: 2vh auto 1vh;
     font-weight: 700;
     font-size: 1.2rem;
 }
 
 
 .text-ty2{
-    margin: 2.5vh;
+    margin: 0 2.5vh .5vh;
     font-size: .7rem;
     line-height: 2.3vh;
 }
 
 
+.rateagain{
+    height: 5vh;
+    margin: .5vh 2.5vh 0;
+    background-color: #fb7413;
+    border: none;
+    border-radius: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+    letter-spacing: .1rem;
+}
+
+
+.rateagain:hover{
+    background-color: white;
+    color: #fb7413;
+    cursor: pointer;
+}
 
 
 @media (min-width: 576px){
